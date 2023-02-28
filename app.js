@@ -43,11 +43,10 @@ crearBarra(php);
 let ilustrator = document.getElementById("ilustrator");
 crearBarra(ilustrator);
 
-//Guardar la cantidad de barritas que se van a ir pintando por cada barra
-//utilizo un arreglo, cada posición pertenece a un elemento
+//Guardar la cantidad de barritas que se van a ir pintando por cada barra. para eso utilizo un arreglo, cada posición pertenece a un elemento
 //comienzan en -1 porque no tiene ninguna pintada al iniciarse
 let contadores = [-1,-1,-1,-1,-1,-1];
-//esta variable la voy a utilizar para saber si ya ejecuto la animación
+//esta variable la utilizo para saber si ya ejecuto la animación
 let entro = false;
 
 //función que aplica las animaciones de la habilidades
@@ -89,7 +88,7 @@ function pintarBarra(id_graf, cantidad, indice, interval){
     }
 }
 
-//detecto el scrolling del mouse para aplicar la animación de la barra
+//detecto el scrolling del mouse para aplicar la animación
 window.onscroll = function(){
     efectoHabilidades();
 }
